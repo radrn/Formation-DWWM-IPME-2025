@@ -19,7 +19,11 @@ form.addEventListener('submit', (e) =>{
     ageParagraphe.innerHTML = ageInput.value + " ans";
     div.append(ageParagraphe);
 
-    let gender = document.querySelector("#man")
+    let gendersInputs = document.querySelector(".genders:checked");
+    console.log(gendersInputs);
+    let genders = document.createElement("p");
+    genders.innerHTML = gendersInputs.value;
+    div.append(genders);
 
     let professionInput = document.querySelector("#profession");
     let professionOptions = document.createElement("p");
@@ -39,7 +43,8 @@ form.addEventListener('submit', (e) =>{
     div.append(str);
 
     let linkInput = document.querySelector("#link");
-    let linkPara = document.createElement("p");
+    let linkPara = document.createElement("a");
+    linkPara.href = linkInput.value;
     linkPara.innerHTML = linkInput.value;
     div.append(linkPara);
 });
