@@ -4,6 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Formulaire</title>
+        <link rel="stylesheet" href="formulaire.css">
+        <script src="formulaire.js" defer></script>
     </head>
     <body>
         <h1>Formulaire Profil</h1>
@@ -11,61 +13,61 @@
         <form id="formulaire">
             <div>
                 <label for="name">Nom</label>
-                <input type="text" />
+                <input type="text" name="name" />
             </div>
             <div>
                 <label for="first-name">Prénom</label>
-                <input type="text" />
+                <input type="text" name="firstName" />
             </div>
             <div>
                 <label for="age">Âge</label>
-                <input type="number" />
+                <input type="number" name="number" />
             </div>
             <div>
                 <label for="sex">Sexe</label>
                 <label for="man">Homme</label>
-                <input type="radio" />
+                <input type="radio" name="man"/>
                 <label for="woman">Femme</label>
-                <input type="radio" />
+                <input type="radio" name="woman" />
             </div>
             <div>
                 <label for="profession">Profession</label>
                 <select name="profession" id="profession">
-                    <option value="">-- Sélectionner --</option>
-                    <option value="">Étudiant(e)</option>
-                    <option value="">Développeur(se)</option>
-                    <option value="">Enseignant(e)</option>
-                    <option value="">Designer</option>
-                    <option value="">Autre</option>
+                    <option value="select" name="select">-- Sélectionner --</option>
+                    <option value="etudiant" name="etudiant">Étudiant(e)</option>
+                    <option value="developpeur" name="developpeur">Développeur(se)</option>
+                    <option value="enseignant" name="enseignant">Enseignant(e)</option>
+                    <option value="designer" name="designer">Designer</option>
+                    <option value="autre" name="autre">Autre</option>
                 </select>
                 </div>
                 <div>
                 <label for="region">Région</label>
                 <select name="region" id="region">
-                    <option value="">-- Sélectionner --</option>
-                    <option value="">Île-de-France</option>
-                    <option value="">Provence-Alpes-Côte d’Azur</option>
-                    <option value="">Bretagne</option>
-                    <option value="">Grand Est</option>
-                    <option value="">Auvergne-Rhône-Alpes</option>
+                    <option value="select" name="select">-- Sélectionner --</option>
+                    <option value="Île-de-France" name="idf">Île-de-France</option>
+                    <option value="Provence-Alpes-Côte-d’Azur" name="paca">Provence-Alpes-Côte d’Azur</option>
+                    <option value="Bretagne" name="bretagne">Bretagne</option>
+                    <option value="Grand Est" name="grandEst">Grand Est</option>
+                    <option value="Auvergne-Rhône-Alpes" name="aura">Auvergne-Rhône-Alpes</option>
                 </select>
             </div>
             <div>
                 <label for="hobbies">Hobbies</label>
                 <label for="reading">Lecture</label>
-                <input type="checkbox" />
+                <input type="checkbox" name="reading" />
                 <label for="sport">Sport</label>
-                <input type="checkbox" />
+                <input type="checkbox" name="sport"/>
                 <label for="games">Jeux Vidéo</label>
-                <input type="checkbox" />
+                <input type="checkbox" name="games" />
                 <label for="music">Musique</label>
-                <input type="checkbox" />
+                <input type="checkbox" name="musique" />
                 <label for="travel">Voyage</label>
-                <input type="checkbox" />
+                <input type="checkbox" name="travel" />
             </div>
             <div>
                 <label for="link">Lien Linkedin</label>
-                <input type="url" />
+                <input type="url" name="link" />
             </div>
             <button type="submit">Valider</button>
         </form>
