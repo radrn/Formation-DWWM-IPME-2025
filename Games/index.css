@@ -2,3 +2,20 @@ body {
     background-color: rgb(8, 8, 46);
     color: white;
 }
+
+button{
+    padding: 5px;
+    border-radius: 8px;
+    background-color: rgb(61, 102, 129);
+    color : white;
+    border : none; 
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+h1{
+    padding: 15px;
+}
