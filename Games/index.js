@@ -18,6 +18,9 @@ const player2Objet = {
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
+    div.innerHTML = "";
+    player1Objet.pv = 200;
+    player2Objet.pv = 200;
     displayName();
     displayHouse();
     let tour = 1;
@@ -44,9 +47,11 @@ form.addEventListener('submit', (e) => {
 function attack(attaquant, defenseur){
         let dammage = Math.floor(Math.random() * (15 - 5) ) + 5;
         defenseur.pv -= dammage;
-
+        if (defenseur.pv < 0) {
+            defenseur.pv = 0;
+        }
         let history = document.createElement("p");
-        history.innerHTML = attaquant.name + " attaque " + defenseur.name + " pour " + dammage + " dégats. " + " Il reste " + defenseur.pv + " PV à " + defenseur.name;
+        history.innerHTML = attaquant.name + " attaque " + defenseur.name + " inflige " + dammage + " dégats. " + " Il reste " + defenseur.pv + " PV à " + defenseur.name;
         div.append(history);
 }
  
