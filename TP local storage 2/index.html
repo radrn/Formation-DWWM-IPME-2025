@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cartes</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1>Cartes Mystère - Crée ta collection</h1>
+        <form action="">
+            <div>
+                <section>
+                <label for="Name"></label>
+                <input type="text" id="name" placeholder="Nom de la carte" />
+                </section>
+                <section>
+                <select name="Type" id="type">
+                    <option value="default">-- Type --</option>
+                    <option value="Feu">Feu 🔥</option>
+                    <option value="Eau">Eau 💧</option>
+                    <option value="Terre">Terre 🌱</option>
+                    <option value="Air">Air 🌪️</option>
+                    <option value="Magie">Magie ✨</option>
+                </select>
+                </section>
+                <section>
+                <label for="pouvoir"></label>
+                <input type="text" id="pouvoir" placeholder="Pouvoir spécial" />
+                </section>
+                <button type="submit">Ajouter</button>
+                <button type="reset">x</button>
+            </div>
+        </form>
+        <div class="card"></div> 
+    </body>
+</html>
