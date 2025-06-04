@@ -1,0 +1,32 @@
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .animal-name {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    
+    button {
+        margin-top: 1rem;
+        margin-right: 0.5rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        background-color: rgb(33, 117, 89);
+        color: white;
+        border-radius: 5px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column; 
+        background-color: #f8f8f8;
+        padding: 1rem;
+        margin: 1rem ;
+        border: 1px solid #8d8d8d;
+        border-radius: 10px;
+    }
