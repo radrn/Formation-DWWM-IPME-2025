@@ -23,3 +23,16 @@ div{
     border-radius: 3px;
 }
 
+
+.new-card{
+    border: 5px solid rgb(101, 156, 147);
+    background-color: rgb(181, 211, 206) ;
+    border-radius: 10px;
+    padding : 5px;
+    margin-top: 15px;
+    gap : 20px;
+}
+
+.new-card p {
+
+}
