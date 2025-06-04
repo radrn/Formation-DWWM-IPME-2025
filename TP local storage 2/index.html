@@ -8,8 +8,8 @@
         <script src="script.js" defer></script>
     </head>
     <body>
-        <h1>Cartes Mystère - Crée ta collection</h1>
-        <form action="">
+        <h1>Cartes Mystères - Crée ta collection</h1>
+        <form action="" class="form">
             <div>
                 <section>
                 <label for="Name"></label>
@@ -18,21 +18,21 @@
                 <section>
                 <select name="Type" id="type">
                     <option value="default">-- Type --</option>
-                    <option value="Feu">Feu 🔥</option>
-                    <option value="Eau">Eau 💧</option>
-                    <option value="Terre">Terre 🌱</option>
-                    <option value="Air">Air 🌪️</option>
-                    <option value="Magie">Magie ✨</option>
+                    <option value="Feu 🔥">Feu 🔥</option>
+                    <option value="Eau 💧">Eau 💧</option>
+                    <option value="Terre 🌱">Terre 🌱</option>
+                    <option value="Air 🌪️">Air 🌪️</option>
+                    <option value="Magie ✨">Magie ✨</option>
                 </select>
                 </section>
                 <section>
                 <label for="pouvoir"></label>
                 <input type="text" id="pouvoir" placeholder="Pouvoir spécial" />
                 </section>
-                <button type="submit">Ajouter</button>
-                <button type="reset">x</button>
+                <button type="submit" class="submit">Ajouter</button>
+                <button type="reset" class="reset">x</button>
             </div>
-        </form>
-        <div class="card"></div> 
+            </form>
+        <div id="container"></div> 
     </body>
 </html>

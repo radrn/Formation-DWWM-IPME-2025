@@ -1,4 +1,25 @@
+body{
+    text-align: center;
+}
+
 div{
     display: flex;
     flex-direction: row;
+    gap: 5px;
+    justify-content: center;
 }
+
+.submit{
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 3px;
+}
+
+.reset{
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+}
+
