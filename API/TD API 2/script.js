@@ -29,8 +29,24 @@ let userInput = document.querySelector('#input');
                 drinkName.innerHTML = data.drinks[i].strDrink;
                 card.append(drinkName);
 
-                let ingredients = document.createElement('ul');
-                for (i)
+                let ingredientArray = [];
+                let drink = data.drinks[i];
+                for (let i = 1; i <= 15 ;  i++) {
+                    let ingredientString = 'strIngredient' + i;
+                    if(drink[ingredientString] !== null){
+                        ingredientArray.push(drink[ingredientString]);
+                    }
+                }
+
+                let ulIngredients = document.createElement('ul');
+                for (let i = 1; i <= 15 ;  i++) {
+                    if (ingredientArray[i] !== undefined) {
+                        let ingredient = document.createElement('li');
+                        ingredient.innerHTML = ingredientArray[i];
+                        ulIngredients.append(ingredient);
+                    }
+                }
+                card.append(ulIngredients);
 
                 let instructions = document.createElement('p');
                 instructions.innerHTML = data.drinks[i].strInstructions;
@@ -40,5 +56,3 @@ let userInput = document.querySelector('#input');
             }
          });
  });
-
-// strIngredient pour les igrédients
