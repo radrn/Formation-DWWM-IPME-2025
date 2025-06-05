@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+    </head>
+    <header>
+        <ul>
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./stats.html">Services</a></li>
+        </ul>
+    </header>
+    <body>
+        <main>
+            <h1>Nous Contacter</h1>
+            <img
+                src="./puy-de-dome-gerard-fayet-tc-dome-12b.jpg"
+                alt="Le Puy De Dôme"
+                height="450"
+            />
+            <ul>
+                <li>12 rue du pays Imaginaire</li>
+                <li>63000 Clermont-Ferrand</li>
+                <li>Par téléphone: 0473999999</li>
+                <li>Par mail: auvergne@auvergne.fr</li>
+            </ul>
+            <form action="">
+                <div>
+                    <label for="Nom">Nom:</label>
+                    <input type="text" id="Nom" name="Nom" />
+                    <label for="Prénom">Prénom:</label>
+                    <input type="text" id="Prénom" name="Prénom" />
+                </div>
+                <div>
+                    <label for="Date-visite">Date de votre prochaine visite:</label>
+                    <input
+                        type="date"
+                        id="Date-visite"
+                        name="Date-visite"
+                    />
+                </div>
+                <div>
+                    <label for="commentaire">Commentaire :</label>
+                    <textarea
+                        id="commentaire"
+                        name="commentaire"
+                        rows="4"
+                        cols="0 "
+                    ></textarea>
+                </div>
+                <div>
+                    <p>Vous êtes :</p>
+                    <label for="Particulier">Un particulier:</label>
+                    <input
+                        type="radio"
+                        id="Particulier"
+                        name="type_utilisateur"
+                    />
+                    <label for="Entreprise">Une entreprise </label>
+                    <input
+                        type="radio"
+                        id="Entreprise"
+                        name="type_utilisateur"
+                    />
+                </div>
+                <div>
+                    <label for="photo">Ajoutez une photo :</label>
+                    <input
+                        type="file"
+                        id="photo"
+                        name="photo"
+                        accept="image/*"
+                    />
+                </div>
+                <div>
+                    <label for="reglement"
+                        >J'ai lu et j'accepte le règlement</label
+                    >
+                    <input
+                        type="checkbox"
+                        id="reglement"
+                        name="reglement"
+                        required
+                    />
+                </div>
+                <div>
+                    <button type="submit">Envoyer</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

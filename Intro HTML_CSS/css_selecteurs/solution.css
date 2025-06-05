@@ -1,0 +1,65 @@
+/*On peut... mais prenez l'habitude de ne JAMAIS utiliser les ID */
+#superTitre {
+    color: hotpink;
+}
+
+/* "c" "s" "s" */
+h1 span:nth-child(1){
+    color: cornflowerblue;
+}
+h1 span:nth-child(2){
+    color: lightseagreen;
+}
+h1 span:nth-child(3){
+    color: deeppink;
+}
+
+/* Le dernier article de la section "liste d'article"*/
+.article-list article:last-child {
+    border: 2px teal dotted;
+}
+
+/* On selectionne les "li" pairs (even)*/
+.main-nav li:nth-child(even) {
+    color: aqua;
+}
+
+/* On selectionne les "li" pairs (even)*/
+.footer-nav li:nth-child(odd) {
+    border: 2px dotted whitesmoke;
+}
+
+th:not(:first-child) {
+    color: orangered;
+}
+
+section em {
+    color: darkorange;
+}
+
+/* La première cellule de chaque rangée (tr)*/
+td:first-child {
+    color: blue;
+}
+
+form button[type="submit"] {
+    background-color: hotpink;
+}
+
+input:required + p span {
+    color: darkred;
+}
+
+input:invalid {
+    color: white;
+    background-color: deeppink;
+}
+
+article a {
+    color: blue;
+}
+
+article p a {
+    color: red;
+}
+

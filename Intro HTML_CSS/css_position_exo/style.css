@@ -1,0 +1,51 @@
+/***********************************/
+/*Dans le code HTML, ajoutez des balises avec les classes e1, e2, e3 etc... ("e" pour "exercice")
+Faites en sorte de placer votre élément "e" dans la case "t" ("target" ou "cible") correspondante.
+
+Exemple: votre "e1" doit se placer dans la case "t1"
+ATTENTION, les éléments "e" doivent être décommentés dans le html
+
+*/
+/* Votre Code */
+.e1 {
+    position: fixed;
+    top: 0;
+}
+
+.e2 {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: -10.5%;
+}
+
+.e3 {
+    position: fixed;
+    bottom: 0;
+    right: 16px;
+}
+
+.e4 {
+    position: sticky;
+    top: 0;
+}
+
+.e5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.e6 {
+    position: absolute;
+}
+
+.e7 {
+    position: absolute;
+    right:0;
+    top: 0;
+    bottom: 0;
+}
+
+/* Fin de votre code */
+/***********************************/

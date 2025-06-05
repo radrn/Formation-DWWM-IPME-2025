@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+:root {
+    --ff-main: Roboto, system-ui, sans-serif;
+    font-family: var(--ff-main);
+
+    /* Colors */
+    --clr-accent-regular: #fd5da8;
+    --clr-accent-darkish: #ea0db0;
+    --clr-accent-dark: #fc2da2;
+    --clr-neutral-100: #fff;
+    --clr-neutral-800: #111;
+    --clr-neutral-900: #000;
+
+    --clr-surface: var(--clr-neutral-800);
+
+    /*Spacings */
+    --s-xxs: 0.125rem;
+    --s-sm: 0.5rem;
+    --s-md: 1rem;
+    --radius-sm: 0.25rem;
+    --radius-max: 100vw;
+}
+
+/* Base */
+html {
+    color-scheme: dark;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-height: 10rem;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/* Utils */
+.container {
+    width: min(calc(100% - calc(var(--s-md) * 2)), 130ch);
+    margin-inline: auto;
+}
+
+/* Header */
+header,
+footer {
+    padding: var(--s-md);
+    background: linear-gradient(
+            to right,
+            var(--clr-accent-regular),
+            var(--clr-accent-darkish)
+    );
+}
+
+nav ul,
+footer ul {
+    list-style: none;
+    padding: var(--s-md);
+}
+
+/* Typography */
+h1 {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-top: 0;
+    text-decoration: underline;
+    text-decoration-color: var(--clr-accent-regular);
+    text-decoration-thickness: var(--s-xxs);
+    text-underline-offset: var(--s-sm);
+}
+
+article h3 {
+    color: var(--clr-accent-regular);
+}
+
+a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: var(--s-sm);
+    border-radius: var(--radius-max);
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: var(--clr-neutral-800);
+}
+
+/* Sections */
+main {
+    padding-block: var(--s-md);
+}
+
+section,
+aside {
+    margin-block: var(--s-md);
+}
+
+aside {
+    border: var(--s-xxs) solid var(--clr-accent-regular);
+    min-width: 300px;
+    padding: 1rem;
+}
+
+aside p {
+    color: var(--clr-accent-regular);
+}
+
+footer {
+    padding: var(--s-sm);
+    background-color: var(--clr-accent-regular);
+}
+
+article {
+    padding: var(--s-md);
+    background-color: var(--clr-surface);
+    border-radius: var(--radius-sm);
+}
+

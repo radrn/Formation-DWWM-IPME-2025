@@ -1,0 +1,50 @@
+.section {
+    background-color: rgb(187, 187, 187);
+    border-radius: 20px;
+    padding-block: 40px;
+     padding-inline: 20px;
+    margin: 40px auto;
+}
+.card {
+    background-color: white;
+    border-radius: 40px;
+    padding: 15px;
+    /* margin-bottom: 20px; */
+}
+.card-img-mini {
+    width: 30%;
+    height: 60px;
+    object-fit: cover;
+}
+.img-main {
+    object-fit: cover;
+    border-radius: 25px;
+    height: 200px;
+    width: 100%;
+}
+nav{
+    margin-top:15px;
+    margin-bottom: 30px;
+}
+ul {
+    list-style: none;
+}
+.tag-btn {
+    background-color: white;
+    color: rgb(24, 24, 24);
+    border: none;
+    font-size: 14px;
+    padding: 6px 14px;
+    border-radius: 8px;
+}
+p {
+    font-size: 20px;
+    padding: 5px 10px;
+    font-weight: bold;
+    flex-grow:2
+}
+.card-bot{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}

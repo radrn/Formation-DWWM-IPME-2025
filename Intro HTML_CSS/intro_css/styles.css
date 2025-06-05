@@ -1,0 +1,92 @@
+body {
+    background-color: #222222;
+}
+header {
+    background-image: url("/photo-1526920929362-5b26677c148c.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 150px;
+}
+h1 {
+    text-align: center;
+    padding: 50px;
+}
+main {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+li {
+    list-style: none;
+    color: white;
+    font-size: 15px;
+}
+h2 {
+    color: white;
+    background-color: #008080;
+}
+p {
+    color: white;
+    font-size: 10px;
+}
+.highlight {
+    color: #008080;
+}
+.comments {
+    text-align: right;
+    color: #008080;
+    font-size: 10px;
+}
+img {
+    width: 110%;
+    height: 190px;
+    margin-left: -5%;
+    object-fit: cover;
+    object-position: center center;
+}
+.text2{
+    font-size:20px;
+    text-align: center;
+    margin: 0;
+}
+.p2{
+    text-align: center;
+    margin-top: 0;
+}
+button{
+    text-align:center;
+    font-size: 8px;
+    color:white;
+    background-color: #008080;
+    border:none;
+    border-radius:5px;
+    padding: 10px;
+}
+div{
+    text-align: center;
+    margin-top: 30px;
+}
+.blue{
+    color: #008080;
+}
+.mot{
+    color: white;
+    font-weight: 700;
+    font-style: italic;
+}
+table, th, td{
+    margin:auto;
+    color: white;
+    border: 1px solid;
+}
+th{
+    background-color: #008080;
+}
+th, td{
+    padding: 10px;
+    text-align: center;
+}
+footer{
+    background-color:#3b3b3b
+}

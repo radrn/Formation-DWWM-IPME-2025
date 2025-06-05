@@ -1,0 +1,40 @@
+/* Votre code */
+.main-nav li:nth-child(even){
+color: rgb(68, 68, 151);
+}
+h1 span:nth-child(1){
+    color:pink;
+}
+h1 span:nth-child(2){
+    color:rgb(219, 72, 97);
+}
+h1 span:nth-child(3){
+    color:rgb(211, 11, 44);
+}
+#superTitre{
+    color:rgb(170, 89, 170);
+}
+a{
+    color:aquamarine
+}
+.comments-link{
+    color:rgb(139, 0, 109)
+}
+article:nth-child(3) {
+    border: 2px dotted rgb(255, 255, 255);
+}
+button[type="submit"]{
+    background-color:orchid;
+}
+table th:nth-child(2), th:nth-child(3){
+    color:rgb(142, 240, 142)
+}
+table td:nth-child(1), th:nth-child(2){
+    color:rgb(253, 188, 8)
+}
+input[minlength="5"]:invalid{
+    background-color: rgb(182, 11, 111);
+}
+footer li:nth-child(odd){
+    border: 2px dotted rgb(255, 255, 255);
+}

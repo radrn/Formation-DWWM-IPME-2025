@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS: Premiers pas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="exo_selecteurs.css">
+<!--    <link rel="stylesheet" href="solution.css">-->
+</head>
+<body>
+
+<header class="hero">
+    <div class="container">
+        <h1>Le <span>c</span><span>s</span><span>s</span>, c'est <span id="superTitre">super</span></h1>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <ul class="container">
+        <li>New game</li>
+        <li>Load</li>
+        <li>Options</li>
+        <li>Dlc</li>
+    </ul>
+</nav>
+
+<section class="container article-list">
+    <article>
+        <h2 class="section-title">Premiers pas</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel sequi aspernatur at beatae ad aut earum
+            praesentium. Sed, consequuntur odit expedita quod incidunt, fugiat rerum beatae temporibus cum. <a
+                href="/">Lire
+            la suite</a>
+        </p>
+    </article>
+
+    <article>
+        <h2 class="section-title">Gros pavé</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel sequi aspernatur at beatae ad aut earum
+            praesentium. Sed, consequuntur odit expedita quod incidunt, fugiat rerum beatae temporibus cum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel sequi aspernatur at beatae ad aut earum
+            praesentium. Sed, consequuntur odit expedita quod incidunt, fugiat rerum beatae temporibus cum.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel sequi aspernatur at beatae ad aut earum
+            praesentium. Sed, consequuntur odit expedita quod incidunt, fugiat rerum beatae temporibus cum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel sequi aspernatur at beatae ad aut earum
+            praesentium. Sed, consequuntur odit expedita quod incidunt, fugiat rerum beatae temporibus cum.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel sequi aspernatur at beatae ad aut earum
+            praesentium. Sed, consequuntur odit expedita quod incidunt, fugiat rerum beatae temporibus cum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel sequi aspernatur at beatae ad aut earum
+            praesentium. Sed, consequuntur odit expedita quod incidunt, fugiat rerum beatae temporibus cum.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel sequi aspernatur at beatae ad aut earum
+            praesentium. Sed, consequuntur odit expedita quod incidunt, fugiat rerum beatae temporibus cum.
+        </p>
+    </article>
+
+    <article>
+        <div class="container">
+            <h2 class="section-title">Presque fini !</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel sequi aspernatur at beatae ad aut earum
+                praesentium. Sed, consequuntur odit expedita quod incidunt, fugiat rerum beatae temporibus cum.
+            </p>
+            <div class="text-right">
+                <a href="" class="comments-link">Voir les commentaires</a>
+            </div>
+        </div>
+    </article>
+</section>
+
+<div class="container divider"></div>
+
+<section class="container">
+    <img class="split-img"
+         src="https://images.unsplash.com/photo-1634286967887-e213b7c815ac?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNDcwNjE0OQ&ixlib=rb-1.2.1&q=85"
+         alt="Une femme porte des lunettes de soleils">
+    <h2 class="italic">Роковая женщина</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto eius, harum quas nam quia dolores error,
+        reprehenderit corporis at dignissimos quaerat facilis suscipit ipsa, veniam numquam ducimus perspiciatis
+        pariatur! Earum!</p>
+
+    <div class="center">
+        <button class="btn-svg">
+            <svg viewBox="0 0 640 512" width="100" title="money-check-alt">
+                <path d="M608 32H32C14.33 32 0 46.33 0 64v384c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V64c0-17.67-14.33-32-32-32zM176 327.88V344c0 4.42-3.58 8-8 8h-16c-4.42 0-8-3.58-8-8v-16.29c-11.29-.58-22.27-4.52-31.37-11.35-3.9-2.93-4.1-8.77-.57-12.14l11.75-11.21c2.77-2.64 6.89-2.76 10.13-.73 3.87 2.42 8.26 3.72 12.82 3.72h28.11c6.5 0 11.8-5.92 11.8-13.19 0-5.95-3.61-11.19-8.77-12.73l-45-13.5c-18.59-5.58-31.58-23.42-31.58-43.39 0-24.52 19.05-44.44 42.67-45.07V152c0-4.42 3.58-8 8-8h16c4.42 0 8 3.58 8 8v16.29c11.29.58 22.27 4.51 31.37 11.35 3.9 2.93 4.1 8.77.57 12.14l-11.75 11.21c-2.77 2.64-6.89 2.76-10.13.73-3.87-2.43-8.26-3.72-12.82-3.72h-28.11c-6.5 0-11.8 5.92-11.8 13.19 0 5.95 3.61 11.19 8.77 12.73l45 13.5c18.59 5.58 31.58 23.42 31.58 43.39 0 24.53-19.05 44.44-42.67 45.07zM416 312c0 4.42-3.58 8-8 8H296c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h112c4.42 0 8 3.58 8 8v16zm160 0c0 4.42-3.58 8-8 8h-80c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16zm0-96c0 4.42-3.58 8-8 8H296c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h272c4.42 0 8 3.58 8 8v16z"/>
+            </svg>
+            Donner l'argent
+        </button>
+    </div>
+</section>
+
+<div class="divider container"></div>
+
+<section>
+    <div class="container">
+        <h2 class="text-teal">Verifiez l'<em class="text-white">exactitude</em> de ces fake data</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Colonne</th>
+                <th>Colonne</th>
+                <th>Colonne</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+            </tr>
+            <tr>
+                <td>Data</td>
+                <td>Data</td>
+                <td>Data</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+<form action="" class="container">
+    <div class="form-control">
+        <label for="lastname">Nom</label>
+        <input id="lastname" required type="text">
+        <p>Champs <span>obligatoire</span></p>
+    </div>
+    <div class="form-control">
+        <label for="firstname">Prenom</label>
+        <input id="firstname" type="text" minlength="5">
+        <p>Champs <span>pas obligatoire</span> mais 5 caractères minimum oui ça n'aucun sens !</p>
+    </div>
+
+    <div class="text-right">
+        <button type="reset">Réinitialiser</button>
+        <button type="submit">Soumettre</button>
+    </div>
+</form>
+
+
+<footer>
+    <nav class="footer-nav">
+        <ul class="container">
+            <li>Mentions Légales</li>
+            <li>CGU</li>
+            <li>plop@plop.fr</li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>
