@@ -19,15 +19,22 @@ let adressInput = document.querySelector("#adressInput");
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     fetch("https://nominatim.openstreetmap.org/search?q=" + adressInput.value + "&format=json")
-    .then((response) =>{
-    return response.json();
-    })
-    .then((data) => {
-        console.log(data);
-        let marker = L.marker([data[0].lat, data[0].lon]).addTo(map);
-        map.setView([data[0].lat, data[0].lon]);
-
-    })
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            console.log(data);
+            if (data.length === 0) {
+                Swal.fire({
+                    title: "On s'est perdu !",
+                    text: "Ton adresse n'a pas été trouvée",
+                    icon: "error",
+                });
+            } else {
+                let marker = L.marker([data[0].lat, data[0].lon]).addTo(map);
+                map.setView([data[0].lat, data[0].lon]);
+            }
+        });
 });
 
 // var marker = L.marker([51.5, -0.09]).addTo(map)
