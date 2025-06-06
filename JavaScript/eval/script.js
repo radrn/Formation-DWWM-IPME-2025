@@ -13,6 +13,11 @@ if (quotes === null) {
 } else {
     quotes = JSON.parse(quotes);
 }
+// tentative de mettre le nombre de citation enregistrées
+    // let quotesNbr = localStorage.getItem("citation");
+    // quotesNbr = document.createElement("span");
+    // quotesNbr.innerHTML = "Il y a " +  quotes.length + " citations enregistrées."
+    // container.append(quotesNbr);
 
 //  création d'un événement lorsqu'on submit notre form
 form.addEventListener("submit", (e) => {
