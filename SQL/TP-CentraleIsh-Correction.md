@@ -149,7 +149,7 @@ LIMIT 5;
 
 ```
 
-# 9/ Afficher les annonces pour les voitures electrique
+# 9/ Afficher les annonces pour les voitures diesel
 
 ```sql
 
@@ -217,7 +217,15 @@ ORDER BY COUNT(*) DESC;
 
 ```sql
 
+SELECT COUNT(*), address.street_name
 
+FROM address
+
+GROUP BY address.street_name
+
+HAVING COUNT(*) > 1
+
+ORDER BY COUNT(*) DESC;
 
 ```
 
@@ -225,7 +233,15 @@ ORDER BY COUNT(*) DESC;
 
 ```sql
 
+SELECT *
 
+FROM user
+
+LEFT JOIN address
+
+ON address.user_uuid = user.uuid
+
+WHERE address.user_uuid IS NULL;
 
 ```
 
@@ -233,7 +249,15 @@ ORDER BY COUNT(*) DESC;
 
 ```sql
 
+SELECT *
 
+FROM listing
+
+JOIN image
+
+ON image.listing_uuid = listing.uuid
+
+WHERE image.listing_uuid IS NULL;
 
 ```
 
@@ -241,7 +265,17 @@ ORDER BY COUNT(*) DESC;
 
 ```sql
 
+SELECT title, COUNT(*)
 
+FROM listing
+
+JOIN image
+
+ON image.listing_uuid = listing.uuid
+
+GROUP BY listing.uuid
+
+HAVING COUNT(*) >1;
 
 ```
 
@@ -249,7 +283,20 @@ ORDER BY COUNT(*) DESC;
 
 ```sql
 
+SELECT brand.name
+    SUM(listing.price) 
 
+FROM brand
+
+JOIN model
+
+ON model.id = model_id
+
+JOIN brand
+
+ON model.brand_id = brand.id
+
+GROUP BY brand.name;
 
 ```
 
@@ -257,6 +304,14 @@ ORDER BY COUNT(*) DESC;
 
 ```sql
 
+SELECT MONTH(listing.created_at), COUNT(*)
 
+FROM listing
+
+WHERE listing.created_at LIKE '2025%'
+
+GROUP BY MONTH(listing.created_at)
+
+ORDER BY COUNT(*) DESC;
 
 ```
