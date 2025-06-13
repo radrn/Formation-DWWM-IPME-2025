@@ -1,0 +1,144 @@
+1- 
+
+SELECT name 
+
+FROM `pokemon`
+
+WHERE is_default = 0;
+
+2- 
+
+SELECT AVG(hp), AVG(atk), AVG(def), AVG(spa), AVG(spd), AVG(spe) FROM pokemon;
+
+3- 
+
+SELECT name, weight
+FROM pokemon
+ORDER BY weight DESC
+LIMIT 1; 
+
+4- 
+
+SELECT name, height
+FROM pokemon
+ORDER BY height ASC
+LIMIT 1;
+
+5- 
+
+SELECT name, spe
+FROM pokemon
+ORDER BY spe ASC
+LIMIT 1;
+
+6- 
+
+SELECT name,  atk
+FROM pokemon
+WHERE atk >= 150;
+
+7- 
+
+SELECT name, hp+atk+def+spa+spd+spe
+FROM pokemon;
+
+8- 
+
+SELECT name 
+FROM pokemon
+WHERE slug = name_api;
+
+9- 
+
+SELECT name
+FROM pokemon
+WHERE atk > (
+ SELECT AVG(atk)
+ FROM pokemon
+);
+
+
+10-
+
+SELECT name
+FROM `pokemon`
+WHERE name LIKE 'mew%';
+
+
+11- 
+
+SELECT	name
+FROM `pokemon`
+WHERE LENGTH(name) < 3;
+
+
+12- 
+
+SELECT	name
+FROM `pokemon`
+WHERE LENGTH(name) 
+ORDER BY name DESC
+LIMIT 1;
+
+13- 
+
+SELECT name, (hp+atk+def+spa+spd+spe) AS stats 
+FROM pokemon
+ORDER BY name DESC
+LIMIT 1;
+
+14- 
+
+SELECT name, base_experience
+FROM pokemon
+ORDER BY base_experience ASC
+LIMIT 1;
+
+15-
+
+SELECT	*,
+  	CONCAT(ROUND((base_experience / (atk + def + spa + spd + spe + hp)) * 100, 2), '%')
+FROM pokemon
+ORDER BY ROUND((base_experience / (atk + def + spa + spd + spe + hp)) * 100, 2) DESC;
+
+
+
+EXO 2 
+
+
+1- 
+
+SELECT last_name, first_name
+FROM students;
+
+2-
+
+SELECT last_name, first_name, sex
+FROM students
+WHERE (sex = 'M' AND height < 160) OR (sex = 'F' AND height > 160);
+
+3- 
+
+SELECT last_name, first_name, height
+FROM students
+ORDER BY height ASC
+LIMIT 1;
+
+4- 
+
+SELECT AVG(height), sex 
+FROM students 
+WHERE sex = 'M';
+
+8- 
+
+SELECT first_name, last_name
+FROM students 
+WHERE height > 170 AND height < 190;
+
+9- 
+
+SELECT first_name, last_name
+FROM students 
+WHERE height = 160 OR height = 170 OR height = 180 OR height = 190;
+
