@@ -34,4 +34,6 @@ if (isset($_POST["title"]) && isset($_POST["genre"]) && isset($_POST["plateform"
                      'rating' => $_POST["rating"],
                 ]);
                 header("Location: index.php?success=1");            
+} else {
+    echo ("Aucun jeux n'a été trouvé");
 }

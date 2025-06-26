@@ -9,6 +9,8 @@ if(isset($_GET["jeux_id"])){
     $stmt = $pdo->prepare($sql);
     $stmt->execute(['id' => $_GET["jeux_id"]]);
     $game = $stmt->fetch(PDO::FETCH_ASSOC);
+} else {
+    echo ("Aucun jeux n'a été trouvé");
 }
 ?>
 
