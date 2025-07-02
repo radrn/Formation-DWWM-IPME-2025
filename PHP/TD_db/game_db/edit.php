@@ -1,10 +1,6 @@
 <?php
 if(isset($_GET["jeux_id"])){
-    $pdo = new PDO(
-        'mysql:host=localhost;dbname=jeux video;charset=utf8',
-        'root',
-        ''
-    );
+   require 'pdo.php';
     $sql = "SELECT * FROM game WHERE id = :id";
     $stmt = $pdo->prepare($sql);
     $stmt->execute(['id' => $_GET["jeux_id"]]);

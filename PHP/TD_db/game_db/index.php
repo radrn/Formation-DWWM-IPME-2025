@@ -1,9 +1,5 @@
 <?php
-$pdo = new PDO(
-    'mysql:host=localhost;dbname=jeux video;charset=utf8',
-    'root',
-    ''
-);
+require 'pdo.php';
 
 $sql = "SELECT * FROM game";
 $stmt = $pdo->prepare($sql);

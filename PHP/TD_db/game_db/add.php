@@ -17,11 +17,7 @@
 
 <?php
 
-    $pdo = new PDO(
-        'mysql:host=localhost;dbname=jeux video;charset=utf8',
-        'root',
-        ''
-    );
+  require 'pdo.php';
 
 
 if (isset($_POST["title"]) && isset($_POST["genre"]) && isset($_POST["plateform"]) && isset($_POST["rating"])){

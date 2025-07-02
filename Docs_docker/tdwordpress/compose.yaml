@@ -1,0 +1,24 @@
+services:
+  mariadb:
+    image: mariadb
+    environment:
+      - MARIADB_ROOT_PASSWORD=thepw
+
+  phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
+
+  wordpress:
+    image: wordpress
+    ports:
+      - 8081:80
+    environment:
+      WORDPRESS_DB_HOST: mariadb
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: thepw
+      WORDPRESS_DB_NAME: db_wordpress
+    volumes:
+      - ./wordpress:/var/www/html
